@@ -1,0 +1,15 @@
+spam	Congratulations! You have won a free prize today
+spam	Congratulations! Click here to claim your free gift
+spam	Congratulations! You are selected for a free iPhone
+spam	Win a free vacation! Congratulations to our winner
+spam	CONGRATULATIONS you win a cash reward click now
+spam	Limited offer! Free gift card click now to claim
+spam	Make money fast earn free cash guaranteed offer
+spam	Urgent your account needs verification click here
+ham	Congratulations on your promotion John well deserved
+ham	Congratulations to the whole team on shipping v2
+ham	Thanks for the report see you at the meeting Thursday
+ham	Hi please find the attached invoice for review
+ham	Can we reschedule our standup to Friday morning
+ham	The deployment is ready for your review and approval
+ham	Please send me the updated project plan by end of day

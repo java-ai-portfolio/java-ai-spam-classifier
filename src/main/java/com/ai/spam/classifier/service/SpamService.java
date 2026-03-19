@@ -22,7 +22,7 @@ public class SpamService {
     @PostConstruct
     public void init() throws IOException {
         InputStream trainingStream = getClass()
-                .getResourceAsStream("/training-data.txt");
+                .getResourceAsStream("/SMSSpamCollection.txt");
 
         if (trainingStream == null) {
             throw new FileNotFoundException(

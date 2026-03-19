@@ -53,6 +53,7 @@ public class SpamService {
     }
 
     public ClassificationResult classify(String text) {
+        validateText(text);
         double[] outcomes = categorizer.categorize(text.split("\\s+"));
         String category   = categorizer.getBestCategory(outcomes);
         double confidence = outcomes[categorizer.getIndex(category)];
@@ -60,5 +61,25 @@ public class SpamService {
         return new ClassificationResult(category, confidence);
     }
 
+    private  void  validateText(String text){
+
+        if (text == null || text.isBlank()) {
+            throw new IllegalArgumentException(
+                    "Text cannot be empty"
+            );
+        }
+
+        if (text.trim().length() < 3) {
+            throw new IllegalArgumentException(
+                    "Text too short — minimum 3 characters required"
+            );
+        }
+
+        if (text.length() > 10_000) {
+            throw new IllegalArgumentException(
+                    "Text too long — maximum 10,000 characters allowed"
+            );
+        }
+    }
 
 }
